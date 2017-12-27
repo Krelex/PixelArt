@@ -1,11 +1,4 @@
-// Select color input
 
-// Select size input
-
-
-
-
-// When size is submitted by the user, call makeGrid
 function makeGrid() {
 	var pixR= $('#input_height').val();
 	var pixC= $('#input_width').val();
@@ -18,23 +11,14 @@ function makeGrid() {
 			pix.children().last().append("<td></td>");
 		}
 	}
-
 	pix.on('click', 'td', function () {
 	var boja = $("#colorPicker").val();
 	$(this).css("background", boja);
 	});
 }
 
-
-
-
-
-
 $('#send').click(function (e) {
 	e.preventDefault();	
 	makeGrid();
 });
 		
-
-
-
